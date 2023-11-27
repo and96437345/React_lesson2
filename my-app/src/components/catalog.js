@@ -1,19 +1,29 @@
 import React from 'react';
+import ProductCard from './ProductCard';
 
 const Catalog = () => {
+  const productsList = [
+    {
+      id: 1,
+      name: "Prod1",
+      image: " ",
+      price: "19.99",
+    },
+    {
+      id: 2,
+      name: "Prod2",
+      image: " ",
+      price: "19.99",
+    },
+  ]
+
     return (
+      
       <div className="catalog">
       <div className="catalog__row">
-        <div className="catalog__item-container">
-          <div className="catalog__item">
-            <div className="canalog__item-image">
-              <img src="./i.webp" alt="" />
-            </div>
-            <a href="" className="catalog-item__title">Porsche Cayen</a>
-            <div className="catalog-item__price">10 000</div>
-            <button className="catalog-item__button">В корзину</button>
-          </div>
-        </div>
+        {productsList.map(product => {
+          <ProductCard key={product.id} product={product}/>
+        })}
       </div>
     </div>
     );

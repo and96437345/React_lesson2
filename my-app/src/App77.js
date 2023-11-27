@@ -18,7 +18,7 @@ function App() {
           <h1>Каталог товаров</h1>
           <Routes>
           <Route path='/' exact element={<Home />}/>
-          <Route path='/catalog' element={<CatalogTitle />}/>
+          <Route path='catalog' element={<CatalogTitle />}/>
           <Route path='/about' element={<About />}/>
           </Routes>
           <Catalog/>

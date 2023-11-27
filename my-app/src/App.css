@@ -33,6 +33,11 @@ button {
   background-color: rgb(49, 49, 181);
   padding: 10px;
   color: white;
+  border-radius: 5px;
+  transition: .5s;
+}
+button:hover {
+  background-color: #873030;
 }
 main {
   flex-grow: 1;
