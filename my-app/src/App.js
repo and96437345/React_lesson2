@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header';
 import Catalog from './components/catalog';
 import Footer from './components/footer';
+import ProductDetail from './components/ProductDetail';
 
 const About = () => <h1>About</h1>
 const Home = () => <h1>Home</h1>
@@ -20,6 +21,7 @@ function App() {
           <Route path='/' exact element={<Home />}/>
           <Route path='/catalog' element={<CatalogTitle />}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/product/:id' element={<ProductDetail />}/>
           </Routes>
           <Catalog/>
         </div>

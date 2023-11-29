@@ -2,20 +2,18 @@ import React from 'react'
 
 const ProductCard = ({product}) => {
   return (
-    <div className="catalog">
-      <div className="catalog__row">
+
         <div className="catalog__item-container">
           <div className="catalog__item">
             <div className="canalog__item-image">
               <img src={product.image} alt="" />
             </div>
-            <a href="" className="catalog-item__title">{product.name}</a>
+            <a href='/' className="catalog-item__title">{product.name}</a>
             <div className="catalog-item__price">{product.price}</div>
             <button className="catalog-item__button">В корзину</button>
           </div>
         </div>
-      </div>
-    </div>
+    
   );
 }
 
